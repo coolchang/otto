@@ -1,0 +1,12 @@
+<h1>Welcome to the daily sentence list</h1>
+
+{{sentence_list}}
+
+
+<ul>
+    {% for sentence in sentence_list %}
+
+    <li>{{ sentence.id }} : {{ sentence.sentence_id }} : {{ sentence.sentence }}</li>
+
+    {% endfor %}
+</ul>
